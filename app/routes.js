@@ -1,4 +1,7 @@
+const bodyParser = require('body-parser'); 
+//const jsonParser = bodyParser.json();
 const fetch = require('node-fetch');
+//const moment = require('moment')
 
 
 module.exports = function(app, passport) {
@@ -9,7 +12,7 @@ app.get('/', function(req, res) {
     fetch('https://api.opendota.com/api/matches/271145478').then(function(response) {
         return response.json();
     }).then(function(myJson) {
-        //console.log(myJson);
+        console.log(myJson);
     });
     res.render('index.ejs');
 });
