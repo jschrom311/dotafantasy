@@ -1,6 +1,18 @@
+const fetch = require('node-fetch');
+
+
 module.exports = function(app, passport) {
 
 // normal routes ===============================================================
+
+app.get('/', function(req, res) {
+    fetch('https://api.opendota.com/api/matches/271145478').then(function(response) {
+        return response.json();
+    }).then(function(myJson) {
+        //console.log(myJson);
+    });
+    res.render('index.ejs');
+});
 
     // show the home page (will also have our login links)
     app.get('/', function(req, res) {
