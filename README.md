@@ -1,3 +1,7 @@
+Dotafantasy is a work in progress to produce a viable fantasy esports platform beginning with the popular MOBA DOTA 2.
+
+
+This application is being built with the Easy Node Authentication boilerplate.
 # Easy Node Authentication
 
 Code for the entire scotch.io tutorial series: Complete Guide to Node Authentication
